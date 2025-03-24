@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisy ui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Dev-Board</title>
+</head>
+<body id="body" class="p-5 bg-slate-400">
+<section class="">
+    <header class="">
+        <nav class=" flex justify-between rounded-xl  p-3 dropdown-content bg-white rounded-box shadow-sm">
+            <div class="flex gap-5">
+                <img class="w-10" src="logo.png" alt="">
+                <h2 class="font-semibold capitalize text-2xl">dev <span class=" text-black font-bold text-2xl capitalize">board</span></h2>
+
+            </div>
+            <div class="flex gap-5">
+                <div class="btn flex gap-3">
+                <img class="w-5" src="checkbox.png" alt="">
+                <p id="increase">10</p>
+            </div>
+                <img id="color-change" class="w-10" src="theme-btn.png" alt="">
+            </div>
+        </nav>   
+    </header>
+</section>
+<!--main container start -->
+
+    <section class="mt-10 w-full min-h-screen flex gap-4 ">
+        <!-- left div -->
+        <div class="w-3/4 bg-[#FFFFFF] py-5 px-3 border border-base-300 rounded-lg">
+            <!-- heading -->
+    <div class="flex rounded-lg gap-4 pb-10 ">
+
+                <div class="flex bg-[#F4F7FF] h-20 w-45 pr-7 border border-base-300 rounded-lg gap-2 justify-center items-center ">
+                    <!-- border border-base-300 -->
+                    <img class="w-9 p-2 h-9  rounded-xl bg-white " src="checkbox.png" alt="">
+                    <div id="" class="mt-5">
+                    <p class="text-base">Task Assigned</p>
+                    <h2 id="decrease">06</h2></div>
+                    </div>
+
+ <div id="change-page"   class=" cursor-pointer rounded-xl  w-65 h-20 flex bg-gradient-to-r from-blue-700 to-blue-400 p-8 justify-center items-center">
+<img class="w-15 h-15" src="board.png" alt="">
+<p  class="text-white text-sm mt-2 capitalize">discover something new today</p>
+</div>
+    <div class=" flex bg-[#F4F7FF] px-4 h-20 w-50 border border-base-300  rounded-xl gap-2 justify-center items-center">
+                  <img class=" w-9 p-2 h-9 rounded-full bg-slate-400" src="calender.png" alt="">
+                  <h3 id="current-date" class="text-sm capitalize">wed ,july 25 2028</h3>
+                  
+                  </div>
+    </div>
+    <hr class="border-t-2 border-dashed border-blue-500 ">
+    <!-- heading area end left -->
+
+            <!-- main card area left div-->
+    <div class=" card grid grid-cols-3 gap-3  mt-10 ">
+        <!-- 1st div -->
+    <div class="bg-[#F4F7FF] h-70 w-55 border border-base-300 space-y-1 rounded-lg p-3 justify-center">
+     <h3 class=" bg-white capitalize border border-base-300 w-20 p-2 text-sm rounded-lg">shopEase</h3>
+    <h1 class="capitalize text[#00303C] text-lg ">Fix Mobile Button Issue </h1>
+    <p class="p-3 bg-white border border-base-300 text-sm text-gray-400 rounded-lg">a card component has a figure, a body part and inside body there are title and action part</p>
+    <div class="flex justify-between mt-4">
+          <div>  <h2 class="text[#496C77] capitalize ">deadline</h2>
+        <h2 class="text[#00303C] text-xs">21 march 2025</h2>  </div>
+        <button id="fix-mobile" class="btn bg-[#3752FD] text-white capitalize text-center">completed</button>
+                     </div>
+        </div> 
+          <!-- 1st div end -->
+
+                <!-- 2 div -->
+                <div class="bg-[#F4F7FF] h-70 w-55 border border-base-300 space-y-1 rounded-lg p-3 justify-center">
+                    <h3 class=" bg-white capitalize border border-base-300 w-20 p-2 text-sm rounded-lg">CloudSync</h3>
+                   <h1 class="capitalize text[#00303C] text-lg ">add dark mode</h1>
+                   <p class="p-3 bg-white border border-base-300 text-sm text-gray-400 rounded-lg">a card component has a figure, a body part and inside body there are title and action part</p>
+                   <div class="flex justify-between mt-4">
+                         <div>  <h2 class="text[#496C77] capitalize ">deadline</h2>
+                       <h2 class="text[#00303C] text-xs">21 march 2025</h2>  </div>
+                       <button id="dark-mode" class="btn bg-[#3752FD] text-white capitalize text-center">completed</button>
+                                    </div>
+                       </div>
+             <!-- 2 div end -->
+<!-- 3 div -->
+<div class="bg-[#F4F7FF] h-70 w-55 border border-base-300 space-y-1 rounded-lg p-3 justify-center">
+    <h3 class=" bg-white capitalize border border-base-300 w-20 p-2 text-sm rounded-lg">swiftPay</h3>
+   <h1 class="capitalize text[#00303C] text-lg ">optimize home page </h1>
+   <p class="p-3  bg-white border border-base-300 text-sm text-gray-400 rounded-lg"> a card component has a figure, a body part and inside body there are title and action part</p>
+   <div class="flex justify-between mt-4">
+         <div>  <h2 class="text[#496C77] capitalize ">deadline</h2>
+       <h2 class="text[#00303C] text-xs">21 march 2025</h2>  </div>
+       <button id="optimize" class="btn bg-[#3752FD] text-white capitalize text-center">completed</button>
+                    </div>
+       </div>
+             <!-- 3 div end -->
+
+                    <!--4 div -->
+                    <div class="bg-[#F4F7FF] h-70 w-55 border border-base-300 space-y-1 rounded-lg p-3 justify-center">
+                        <h3 class=" bg-white capitalize border border-base-300 w-20 p-2 text-sm rounded-lg">meta</h3>
+                       <h1 class="capitalize text[#00303C] text-lg ">add new emoji 🤲 </h1>
+                       <p class="p-3  bg-white border border-base-300 text-sm text-gray-400 rounded-lg">Debug using Chrome DevTools, check for overlapping elements</p>
+                       <div class="flex justify-between mt-4">
+                             <div>  <h2 class="text[#496C77] capitalize ">deadline</h2>
+                           <h2 class="text[#00303C] text-xs">21 march 2025</h2>  </div>
+                           <button id="emoji" class="btn bg-[#3752FD] text-white capitalize text-center">completed</button>
+                                        </div>
+                           </div>
+             <!-- 4 div end -->
+                    <!--5 div -->
+                    <div class="bg-[#F4F7FF] h-70 w-55 border border-base-300 space-y-1 rounded-lg p-3 justify-center">
+                        <h3 class=" bg-white capitalize border border-base-300 w-23 p-2 text-sm rounded-lg">goggle LLC</h3>
+                       <h1 id="integrate" class="capitalize text[#00303C] text-lg ">integrate openAi API</h1>
+                       <p class="p-3  bg-white border border-base-300 text-sm text-gray-400 rounded-lg">Debug using Chrome DevTools, check for overlapping elements</p>
+                       <div class="flex justify-between mt-4">
+                             <div>  <h2 class="text[#496C77] capitalize ">deadline</h2>
+                           <h2 class="text[#00303C] text-xs">21 march 2025</h2>  </div>
+                           <button id="button-id" class="btn bg-[#3752FD] text-white capitalize text-center">completed</button>
+                                        </div>
+                           </div>
+             <!--5 div end -->
+        <!-- 6 div -->
+        <div class="bg-[#F4F7FF] h-70 w-55 border border-base-300 space-y-1 rounded-lg p-3 justify-center">
+            <h3 class=" bg-white capitalize border border-base-300 w-20 p-2 text-sm rounded-lg">Glassdoar</h3>
+           <h1 id="last-div-h" class="capitalize text[#00303C] text-lg ">improve job searching  </h1>
+           <p class="p-3 bg-white border border-base-300 text-sm text-gray-400 rounded-lg">Debug using Chrome DevTools, check for overlapping elements</p>
+           <div class="flex justify-between mt-4">
+                 <div>  <h2 class="text[#496C77] capitalize ">deadline</h2>
+               <h2 class="text[#00303C] text-xs">21 march 2025</h2>  </div>
+               <button id="last-div" class="btn bg-[#3752FD] text-white capitalize text-center">completed</button>
+                            </div>
+               </div>
+             <!-- 6 div end -->
+              
+            </div>
+            <!-- main card end -->
+</div> 
+<!-- left div end -->
+
+        <!-- right div -->
+        <div id="history-card" class="w-1/4 card bg-white text-center space-y-3">
+           <div class="flex justify-center items-center mt-7 gap-4">
+             <img class="mt-1" src="activity.png" alt="">
+            <h3 class="capitalize text[#00303C] text-xl">activity log</h3></div>           
+            <!-- <button class="capitalize bg-blue-600">clear history</button>  -->
+             <button id="clear" class="text-white  border-blue-600 w-30 px-3 py-2 ml-13 capitalize bg-blue-600  rounded-lg ">clear history</button>
+             <hr class="border-t-2 border-dashed border-blue-500">
+        </div>
+    </section>
+
+<!-- main container end -->
+
+   <!-- script src -->
+    <script src="script.js/main.js"></script>
+    <script src="script.js/discover.js"></script>
+    <script src="script.js/change.js"></script>
+</body>
+</html>
