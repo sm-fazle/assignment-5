@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questions</title>
+    <!-- daisy ui link -->
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+    <section class=" min-w-min min-h-screen p-5 bg-[#F4F7FF]">
+             <nav class="card shadow-xl mt-10 border border-base-300 bg-white rounded-lg p-3">
+             <div class="flex justify-between">
+                <div class="flex gap-5">
+                    <img class="w-10 h-10" src="logo.png" alt="">
+                    <h2 class="font-semibold capitalize text-2xl">dev <span class=" text-black font-bold text-2xl capitalize">board</span></h2>
+    
+                </div>
+          <button id="back-to-desc" class="capitalize bg-blue-900 text-center text-white rounded-lg p-3">back to desc</button>
+             </div>
+               </nav>
+               <H2 class="font-bold text-2xl capitalize text-center mt-5">blogs</H2>
+<!-- question start -->
+               <div class="container mt-15 mx-auto space-y-5 ">
+
+                <div class="bg-white card border border-base-300 shadow-md space-y-5 py-5 ">
+                    <h1 class="border-b border-gray-500 px-5 font-bold pb-3"><span class="text-red-700 capitalize font-bold">question no 1:</span> What are the different ways to select an element in the DOM?</h1>
+                     <!-- <hr class="border-gray-600 border-collapse"> -->
+                    <p class="px-5"><span class="text-purple-600 font-bold capitalize text-xl ">Answer :</span> getElementById()	
+                        getElementsByClassName()	
+                        getElementsByTagName()	
+                        querySelector()	
+                        querySelectorAll()	
+                        getElementsByName()
+                    </p>
+
+                </div>
+                <!-- 2 -->
+                <div class="bg-white card border border-base-300 shadow-md space-y-5 py-5">
+                    
+                    <h1 class="border-b border-gray-500 px-5 font-bold pb-3"><span class="text-red-700 capitalize font-bold">question no 2:</span> What is the difference between innerHTML, innerText, and textContent ?</h1>
+                    <p class="px-5"><span class="text-purple-600 font-bold capitalize text-xl ">Answer :</span> <br>
+                    InnerHtml: Retrieves or sets the HTML content inside an <br>
+                    innerText:Retrieves or sets the visible text inside an element. <br>
+                    innerContent:Retrieves or sets all text content, including hidden elements.
+                    </p>
+                </div>
+                <!-- 3 -->
+                <div class="bg-white card border border-base-300 shadow-md space-y-5 py-5">
+                    <h1 class="border-b border-gray-500 font-bold px-5 pb-3"><span class="text-red-700 capitalize font-bold">question no 3:</span> What is event delegation in the DOM?</h1>
+                    <p class="px-5"><span class="text-purple-600 font-bold capitalize text-xl ">Answer :</span>
+                        Event Delegation is a technique in JavaScript where we can call multiple child in one add event listener and it is perfect for  call multiple elements  
+                    </p>
+                </div>
+
+                <!-- 4 -->
+                <div class="bg-white card border border-base-300 shadow-md space-y-5 py-5">
+                    <h1 class="border-b border-gray-500 font-bold px-5 pb-3"><span class="text-red-700 capitalize font-bold">question no 4:</span> What is event bubbling in the DOM?</h1>
+                    <p class="px-5"><span class="text-purple-600 font-bold capitalize text-xl ">Answer :</span>
+                        Event Bubbling is a concept in JavaScript where an event starts from the target element and it can reach up to document until stop. when user interact child element it triggers on first child element and move forward to its parents. bubble up stop by event.stopPropagation();
+                    </p>
+                </div>
+            <!-- 5 -->
+             <div class="bg-white card border border-base-300 shadow-md space-y-5 py-5">
+                <h1 class="border-b border-gray-500 font-bold px-5 pb-3"><span class="font-bold capitalize text-red-700 ">question no 5:</span>How do you create ,add and remove element in javaScript ?</h1>
+                <p class="px-5 "> <span class="font-bold capitalize text-2xl text-purple-600">Answer :</span></p>
+                    <ol class="text-center" type="A">
+                        <li>document.createElement()</li>
+                        <li>appendChild()</li>
+                        <li>append()</li>
+                        <li>prepend()</li>
+                        <li>removeChild()</li>
+                        <li>replaceChild()</li>
+                        <li>element.innerHTML</li>
+                        <li>element.setAttribute("id", "myId")</li>
+                        <li>element.innerText</li>
+                        <li></li>
+                    </ol>
+                
+
+             </div>
+      
+
+     </div>
+    <!-- container end -->
+    </section>
+    <!-- script  -->
+     <script src="script.js/main.js"></script>
+     <!-- <script src="script.js/discover.js"></script> -->
+</body>
+</html>
